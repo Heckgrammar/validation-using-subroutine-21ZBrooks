@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            string firstName, lastName, username, password, emailAddress;
+            string firstName;
+            string lastName;
+            string username;
+            string password;
+            string emailAddress;
             int age;
 
             // get the user inputs until all are valid.
@@ -20,7 +24,7 @@
             Console.Write("Enter email address: ");
             emailAddress = Console.ReadLine();
 
-
+            
             username = createUserName(firstName,lastName,age);
             Console.WriteLine($"Username is {username}, you have successfully registered please remember your password");
 
@@ -30,7 +34,7 @@
         }
         static bool ValidName(string name)
         {
-            // name must be at least two characters and contain only letters
+            
         }
 
         static bool validAge(int age)
